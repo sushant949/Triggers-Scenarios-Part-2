@@ -20,5 +20,15 @@ public with sharing class AccountHandlerClass {
             
         }
     }
+
+    // Whenever Account is updated if phone is blank then show an error
+
+    public static void phoneBlankError(List<Account> accList){
+        for(Account acc : accList){
+            if(acc.Phone == null){
+                acc.Phone.addError('Make sure to provide phone number whenever you are updating an records...You can not empty the phone');
+            }
+        }
+    }
     
 }
