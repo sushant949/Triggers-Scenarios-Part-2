@@ -1,4 +1,4 @@
-Account insert par Name uppercase karo.
+Account insert par Name uppercase karo. ----Done
 
 Account insert par default Industry = “IT” set karo.
 
