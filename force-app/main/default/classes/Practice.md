@@ -1,10 +1,10 @@
 Account insert par Name uppercase karo. ----Done
 
-Account insert par default Industry = “IT” set karo.
+Account insert par default Industry = Technology set karo. ---Done
 
-Account update par Phone blank ho to error dikhao.
+Account update par Phone blank ho to error dikhao.  ---Done
 
-Account insert par Rating = “Warm” set karo.
+Account insert par Rating = “Warm” set karo.  ---Done
 
 Account insert par Billing Country = India ho to State set karo.
 

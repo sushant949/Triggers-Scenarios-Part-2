@@ -4,6 +4,7 @@ trigger AccountTriggerHandler on Account (before insert,before update) {
         when  BEFORE_INSERT{
             AccountHandlerClass.nameInUpperCase(Trigger.new);
             AccountHandlerClass.setIndustryToIt(Trigger.new);
+            AccountHandlerClass.setAccountRatingWarm(Trigger.new);
         }
         when BEFORE_UPDATE{
             AccountHandlerClass.phoneBlankError(Trigger.new);

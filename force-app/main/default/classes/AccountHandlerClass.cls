@@ -31,4 +31,14 @@ public with sharing class AccountHandlerClass {
         }
     }
     
+    // Whenever Account is inserted set the rating of an account to Warm if rating is blank
+
+    public static void setAccountRatingWarm(List<Account> accList){
+
+        for(Account acc : accList){
+            if(acc.Rating == null){
+                acc.Rating = 'Warm' ;
+            }
+        }
+    }
 }
