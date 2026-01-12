@@ -85,4 +85,15 @@ public with sharing class AccountHandlerClass {
             }
         }
     }
+
+    // Account update par Industry = “Technology” ho to Type = “Customer” set karo.
+
+    public static void setType(List<Account> accList){
+
+        for(Account acc : accList){
+            if(acc.Industry == 'Technology'){
+                acc.Type = 'Customer';
+            }
+        }
+    }
 }
