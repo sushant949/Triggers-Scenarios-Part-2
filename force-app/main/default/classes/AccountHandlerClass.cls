@@ -41,4 +41,14 @@ public with sharing class AccountHandlerClass {
             }
         }
     }
+    // Whenever account is inserted if billing country is India then set the Description to Country is India
+
+    public static void setBillingState(List<Account> accList){
+
+        for(Account acc : accList){
+            if(acc.BillingCountry == 'India'){
+                acc.Description = 'The billing country is India....';
+            }
+        }
+    }
 }
