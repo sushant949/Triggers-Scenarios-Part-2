@@ -6,6 +6,7 @@ trigger AccountTriggerHandler on Account (before insert,before update) {
             AccountHandlerClass.setIndustryToIt(Trigger.new);
             AccountHandlerClass.setAccountRatingWarm(Trigger.new);
             AccountHandlerClass.setBillingState(Trigger.new);
+            AccountHandlerClass.setAccountRevenue(Trigger.new);
         }
         when BEFORE_UPDATE{
             AccountHandlerClass.phoneBlankError(Trigger.new);

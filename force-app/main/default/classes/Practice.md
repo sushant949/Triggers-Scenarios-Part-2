@@ -10,7 +10,7 @@ Account insert par Billing Country = India ho to State set karo. ----Done
 
 Account update par Name change hua ho to Description update karo.  ----Done(Best Question)
 
-Account insert par Annual Revenue null ho to 0 set karo.
+Account insert par Annual Revenue null ho to 0 set karo. 
 
 Account update par Industry = “IT” ho to Type = “Customer” set karo.
 

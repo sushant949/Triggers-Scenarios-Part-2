@@ -75,4 +75,14 @@ public with sharing class AccountHandlerClass {
             }
         }
     }
+
+    //Whenever Account is inserted and the annual revenue is empty then sets its value to zero
+
+    public static void setAccountRevenue(List<Account> accList){
+        for(Account acc : accList){
+            if(acc.AnnualRevenue == null){
+                acc.AnnualRevenue = 0;
+            }
+        }
+    }
 }
