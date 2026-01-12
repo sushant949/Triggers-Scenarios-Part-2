@@ -6,7 +6,7 @@ Account update par Phone blank ho to error dikhao.  ---Done
 
 Account insert par Rating = “Warm” set karo.  ---Done
 
-Account insert par Billing Country = India ho to State set karo.
+Account insert par Billing Country = India ho to State set karo. ----Done
 
 Account update par Name change hua ho to Description update karo.
 

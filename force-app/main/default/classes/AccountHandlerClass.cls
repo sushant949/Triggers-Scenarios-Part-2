@@ -51,4 +51,16 @@ public with sharing class AccountHandlerClass {
             }
         }
     }
+
+    //Whenever account is updated and the name is changed than display "Account name gets changed" in description
+
+    public static void setDescriptionValue(List<Account> new_accList , Map<Id, Account> oldRec){
+
+        for(Account acc : new_accList){
+            Account oldRecordId = oldRec.get(acc.Id);
+            if(acc.Name != oldRecordId.Name){
+                acc.Description = 'Account name is changed....😊😊😊😊😊';
+            }
+        }
+    }
 }
