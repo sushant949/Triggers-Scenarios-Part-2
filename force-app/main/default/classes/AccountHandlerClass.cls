@@ -63,4 +63,16 @@ public with sharing class AccountHandlerClass {
             }
         }
     }
+
+    //Whenever the account is updated and rating is hot then directly cold nhi hoga warm hona hi pdega
+
+    public static void updateRating(List<Account> newAcc, Map<Id, Account> oldRec){
+
+        for(Account acc : newAcc){
+            Account oldRating = oldRec.get(acc.Id);
+            if(oldRating.Rating == 'Cold' && acc.Rating == 'Hot'){
+                acc.Rating.addError('Hey Warm bhool gye kya');
+            }
+        }
+    }
 }

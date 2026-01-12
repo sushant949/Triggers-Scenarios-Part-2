@@ -10,6 +10,7 @@ trigger AccountTriggerHandler on Account (before insert,before update) {
         when BEFORE_UPDATE{
             AccountHandlerClass.phoneBlankError(Trigger.new);
             AccountHandlerClass.setDescriptionValue(Trigger.new,Trigger.oldMap);
+            AccountHandlerClass.updateRating(Trigger.new,Trigger.oldMap);
         }
     }
 
