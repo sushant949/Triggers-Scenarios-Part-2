@@ -16,7 +16,9 @@ Account update par Industry = “IT” ho to Type = “Customer” set karo. ---
 
 Contact insert par Last Name mandatory karo. --Done
 
-Contact insert par Email blank ho to error dikhao.
+Contact insert par Email blank ho to error dikhao. --Done
+
+Create a description field on contact object and whenever contact is inserted comment in description that contact is inserted
 
 Contact update par Phone blank ho to error dikhao.
 
