@@ -1,8 +1,8 @@
 public with sharing class ContactHandlerClass {
     
-    //Whenver account is inserted make sure that last name is mandatory
+    //Whenever contact is inserted make sure that last name is mandatory
 
-    public static void lastNameMandotory(List<Contact> conList){
+    public static void lastNameMandatory(List<Contact> conList){
 
         for(Contact con : conList){
             if(con.LastName == null){
