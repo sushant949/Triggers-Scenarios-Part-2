@@ -10,4 +10,15 @@ public with sharing class ContactHandlerClass {
             }
         }
     }
+
+    //Whenever contact is inserted if the email is blank show an error
+
+
+    public static void showContactError(List<Contact> conList){
+        for(Contact con : conList){
+            if(con.Email == null){
+                con.Email.addError('Make sure that email is not empty');
+            }
+        }
+    }
 }

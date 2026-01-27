@@ -14,7 +14,7 @@ Account insert par Annual Revenue null ho to 0 set karo. ----Done
 
 Account update par Industry = “IT” ho to Type = “Customer” set karo. ----Done
 
-Contact insert par Last Name mandatory karo.
+Contact insert par Last Name mandatory karo. --Done
 
 Contact insert par Email blank ho to error dikhao.
 
