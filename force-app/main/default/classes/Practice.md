@@ -12,7 +12,7 @@ Account update par Name change hua ho to Description update karo.  ----Done(Best
 
 Account insert par Annual Revenue null ho to 0 set karo. ----Done
 
-Account update par Industry = “IT” ho to Type = “Customer” set karo.
+Account update par Industry = “IT” ho to Type = “Customer” set karo. ----Done
 
 Contact insert par Last Name mandatory karo.
 
