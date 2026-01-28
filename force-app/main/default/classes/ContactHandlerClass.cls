@@ -23,4 +23,12 @@ public with sharing class ContactHandlerClass {
     }
 
     //Whenever Contact is created give contact is created as a text in description
+
+    public static void updateDescription(List<Contact> conList){
+        for(Contact con : conList){
+            if(con.Description == null){
+                con.Description = 'Hurrah😍😍!!!Contact is created!!!!😊😊😊😊😊😊';
+            }
+        }
+    }
 }
