@@ -20,7 +20,7 @@ Contact insert par Email blank ho to error dikhao. --Done
 
 Create a description field on contact object and whenever contact is inserted comment in description that contact is inserted --Done
 
-Contact update par Phone blank ho to error dikhao.
+Contact update par Phone blank ho to error dikhao. -- Done
 
 Lead insert par Lead Source = “Website” ho to Rating = “Hot” set karo.
 
