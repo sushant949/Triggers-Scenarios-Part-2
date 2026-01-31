@@ -31,4 +31,7 @@ public with sharing class ContactHandlerClass {
             }
         }
     }
+
+    //Whenever contact is updated if phone is blank then show an error
+    
 }
