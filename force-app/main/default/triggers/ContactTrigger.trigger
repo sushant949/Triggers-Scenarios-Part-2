@@ -11,6 +11,7 @@ trigger ContactTrigger on Contact (before insert,before update) {
         when BEFORE_UPDATE{
             
             ContactHandlerClass.showErrorWhenPhoneUpdated(Trigger.new);
+            ContactHandlerClass.updateDescriptionOfContact(Trigger.new);
         }
     }
 
