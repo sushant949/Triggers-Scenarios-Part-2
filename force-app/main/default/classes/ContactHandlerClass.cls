@@ -44,6 +44,12 @@ public with sharing class ContactHandlerClass {
     
     //Whenever contact is updated update the description to contact record is updated
     
-    
+    public static void updateDescriptionOfContact(List<Contact> conList){
+
+        for(Contact con : conList){
+            con.Description = 'Contact record is updated 😍😍😍😍😍😍';
+        }
+
+    }
     
 }
