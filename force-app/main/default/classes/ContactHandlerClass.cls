@@ -42,4 +42,7 @@ public with sharing class ContactHandlerClass {
         }
     }
 
+//Whenever contact is updated update the description to contact record is updated
+
+
 }
