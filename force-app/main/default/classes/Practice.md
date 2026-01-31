@@ -22,6 +22,8 @@ Create a description field on contact object and whenever contact is inserted co
 
 Contact update par Phone blank ho to error dikhao. -- Done
 
+Whenever contact is updated description me likho ki contact update hua.
+
 Lead insert par Lead Source = “Website” ho to Rating = “Hot” set karo.
 
 Lead insert par Company blank ho to error dikhao.
