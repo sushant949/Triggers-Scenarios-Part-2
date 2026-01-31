@@ -1,4 +1,4 @@
-trigger ContactTrigger on Contact (before insert) {
+trigger ContactTrigger on Contact (before insert,before update) {
 
     switch on Trigger.operationType {
         when BEFORE_INSERT {
@@ -6,6 +6,11 @@ trigger ContactTrigger on Contact (before insert) {
             ContactHandlerClass.showContactError(Trigger.new);
             ContactHandlerClass.updateDescription(Trigger.new);
             
+        }
+
+        when BEFORE_UPDATE{
+            
+            ContactHandlerClass.showErrorWhenPhoneUpdated(Trigger.new);
         }
     }
 
