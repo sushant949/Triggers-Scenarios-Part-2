@@ -33,5 +33,13 @@ public with sharing class ContactHandlerClass {
     }
 
     //Whenever contact is updated if phone is blank then show an error
-    
+
+    public static void showErrorWhenPhoneUpdated(List<Contact> conList){
+        for(Contact con : conList){
+            if(con.Phone == null){
+                con.Phone.addError('You can not update a record if Phone field is blank');
+            }
+        }
+    }
+
 }
